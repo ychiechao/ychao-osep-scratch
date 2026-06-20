@@ -3,7 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scratch × Arduino 教師自學電子書</title>
+<title>OSEP × Scratch Arduino 師生自學電子書 | 羅東國中 楊智超老師</title>
+
+<!-- SEO 基本標籤 -->
+<meta name="description" content="OSEP × Scratch Arduino 師生自學最簡單的電子書。從積木程式到實體控制，13章節完整帶你進入創客世界。適合國中教師研習與自學，涵蓋LED、蜂鳴器、超音波、伺服馬達、DHT11物聯網等實作。羅東國中楊智超老師設計。">
+<meta name="keywords" content="Scratch Arduino,OSEP,Arduino教學,國中科技,創客教育,物聯網教學,DHT11,超音波感測器,伺服馬達,LED控制,積木程式,師生自學,楊智超,羅東國中,Arduino電子書">
+<meta name="author" content="楊智超 - 羅東國中">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ychiechao.github.io/ychao-osep-scratch/">
+
+<!-- Open Graph（Facebook / LINE 分享預覽） -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="OSEP × Scratch Arduino 師生自學電子書">
+<meta property="og:description" content="從積木程式到實體控制，13章節帶你進入創客世界。涵蓋LED、超音波雷達、伺服馬達、DHT11物聯網等完整實作，羅東國中楊智超老師設計。">
+<meta property="og:url" content="https://ychiechao.github.io/ychao-osep-scratch/">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="OSEP × Scratch Arduino 電子書">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="OSEP × Scratch Arduino 師生自學電子書">
+<meta name="twitter:description" content="從積木程式到實體控制，13章節完整帶你進入創客世界。羅東國中楊智超老師設計。">
+
+<!-- 結構化資料 (Google 搜尋摘要) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "OSEP × Scratch Arduino 師生自學電子書",
+  "description": "從積木程式到實體控制，13章節完整帶你進入創客世界。適合國中教師研習與學生自學。",
+  "url": "https://ychiechao.github.io/ychao-osep-scratch/",
+  "author": {
+    "@type": "Person",
+    "name": "楊智超",
+    "affiliation": "羅東國中"
+  },
+  "educationalLevel": "中學",
+  "educationalUse": "教師研習、自學",
+  "inLanguage": "zh-TW",
+  "keywords": "Scratch, Arduino, OSEP, 創客教育, 物聯網, 國中科技",
+  "teaches": "Arduino程式設計、實體運算、物聯網基礎"
+}
+</script>
 <style>
 /* 系統字型替代 Google Fonts，完全離線可用 */
 </style>
@@ -545,7 +586,7 @@
             <tr><td>第三章</td><td>LED 閃爍</td><td>20 分鐘</td><td>數位輸出控制</td></tr>
             <tr><td>第四章</td><td>PWM 呼吸燈</td><td>20 分鐘</td><td>類比輸出漸變</td></tr>
             <tr><td>第五章</td><td>按鍵控制</td><td>20 分鐘</td><td>數位輸入讀取</td></tr>
-            <tr><td>第六章</td><td>光敏電阻</td><td>25 分鐘</td><td>感測器整合專案</td></tr>
+            <tr><td>第六章</td><td>智慧感應燈</td><td>25 分鐘</td><td>感測器整合專案</td></tr>
             <tr><td>第七章</td><td>蜂鳴器模組應用</td><td>25 分鐘</td><td>有源倒車音 + 無源小星星</td></tr>
             <tr><td>第八章</td><td>可變電阻應用</td><td>25 分鐘</td><td>旋鈕控制紅綠燈 + Scratch 角色</td></tr>
             <tr><td>第九章</td><td>LCD 1602 顯示模組</td><td>25 分鐘</td><td>I2C 接線 + 顯示旋鈕數值</td></tr>
@@ -925,6 +966,10 @@ LED / 感測器 / 馬達</div>
             <div class="task-check"></div>
             <div class="task-text">▶ 3-3 SOS 求救燈教學影片：<a href="https://youtu.be/8WT7UX3vjgA" target="_blank" style="color:#2563EB;font-weight:700">https://youtu.be/8WT7UX3vjgA</a></div>
           </div>
+          <div class="task" onclick="toggleTask(this)" style="margin-bottom:8px">
+            <div class="task-check"></div>
+            <div class="task-text">▶ 3-3 SOS 求救燈教學影片：<a href="https://youtu.be/8WT7UX3vjgA" target="_blank" style="color:#2563EB;font-weight:700">https://youtu.be/8WT7UX3vjgA</a></div>
+          </div>
           <p>莫斯電碼 SOS：<strong>···---···</strong>（三短、三長、三短）</p>
                     <div style="margin:14px 0;border-radius:12px;overflow:hidden;border:1px solid #334155;background:#1E1E2E">
             <div style="padding:8px 14px;background:#1E293B;font-size:11px;color:#94A3B8;letter-spacing:1px">▸ OSEP Scratch 積木程式範例</div>
@@ -1179,17 +1224,17 @@ LED / 感測器 / 馬達</div>
       <button class="complete-btn" id="complete-ch5" onclick="completeChapter(5)">✓ 第五章完成，繼續下一章</button>
       <div class="nav-btns">
         <button class="btn btn-secondary" onclick="goChapter(4)">← 第四章</button>
-        <button class="btn btn-primary" onclick="goChapter(6)">第六章：光敏電阻 →</button>
+        <button class="btn btn-primary" onclick="goChapter(6)">第六章：智慧感應燈 →</button>
       </div>
     </div>
 
     <!-- ════════════════════════════════════════
-         CHAPTER 6: 光敏電阻（整合專案）
+         CHAPTER 6: 智慧感應燈（整合專案）
     ════════════════════════════════════════ -->
     <div class="chapter-page" id="ch6">
       <div class="ch-header">
         <div class="ch-num">Chapter 06</div>
-        <div class="ch-title">光敏電阻</div>
+        <div class="ch-title">整合專案：智慧感應燈</div>
         <div class="ch-desc">結合光敏電阻與 LED，做出「天暗自動開燈」的智慧路燈系統</div>
         <div class="ch-time">⏱ 約 25 分鐘</div>
       </div>
@@ -2400,6 +2445,9 @@ LED / 感測器 / 馬達</div>
             </div>
             <div style="padding:8px 14px;background:#0F172A;font-size:11px;color:#64748B;text-align:center">Ch12-4 DHT11 讀取溫溼度 + 寫入 Google 試算表完整積木程式</div>
           </div>
+            <div style="padding:8px 14px;background:#0F172A;font-size:11px;color:#64748B;text-align:center">Ch12 DHT11 溫溼度 → 讀寫 Google 試算表套件完整積木程式</div>
+          </div>
+
           <div class="info-box info-ok"><div class="ib-icon">🎉</div><div>點綠旗執行後，每 30 秒打開 Google Sheets 重新整理一次，就能看到溫度和溼度資料自動新增！完全不需要寫任何後端程式。</div></div>
           <div class="task" onclick="toggleTask(this)">
             <div class="task-check"></div>
@@ -2422,7 +2470,7 @@ LED / 感測器 / 馬達</div>
 
       <div class="step-card" data-chapter="12">
         <div class="step-header" onclick="toggleStep(this)">
-          <div class="step-num">6</div>
+          <div class="step-num">5</div>
           <div class="step-title-wrap">
             <div class="step-title">課程亮點：這就是物聯網！</div>
             <div class="step-sub">教師教學引導話術</div>
@@ -2507,12 +2555,11 @@ LED / 感測器 / 馬達</div>
         </div>
       </div>
 
-      <button class="complete-btn" id="complete-ch12" onclick="completeChapter(12)">✓ 第十二章完成，繼續下一章</button>
+            <button class="complete-btn" id="complete-ch12" onclick="completeChapter(12)">✓ 第十二章完成，繼續下一章</button>
       <div class="nav-btns">
-        <button class="btn btn-secondary" onclick="goChapter(11)">← 第十一章</button>
+        <button class="btn btn-secondary" onclick="goChapter(8)">← 第八章</button>
         <button class="btn btn-primary" onclick="goChapter(13)">第十三章：創意發想 →</button>
       </div>
-    </div>
 
     <!-- ════════════════════════════════════════
          CHAPTER 13: 創意互動題目發想
@@ -2853,7 +2900,7 @@ const CHAPTERS = [
   { id: 3,    title: 'LED 閃爍',          short: 'Ch3 LED' },
   { id: 4,    title: 'PWM 呼吸燈',        short: 'Ch4 PWM' },
   { id: 5,    title: '按鍵控制',          short: 'Ch5 按鍵' },
-  { id: 6,    title: '光敏電阻',          short: 'Ch6 光敏' },
+  { id: 6,    title: '智慧感應燈',        short: 'Ch6 整合' },
   { id: '6b', title: '感測器分類整理站',  short: '✦ 整理站' },
   { id: 7,    title: '蜂鳴器模組應用',    short: 'Ch7 蜂鳴器' },
   { id: 8,    title: '可變電阻應用',      short: 'Ch8 旋鈕' },
